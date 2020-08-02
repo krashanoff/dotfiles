@@ -1,0 +1,48 @@
+*background: #0f0f0f
+*foreground: #c8c8c8
+
+!black
+*color0:  #251f1f
+*color8:  #5e5e5e
+!red
+*color1:  #eb4509
+*color9:  #eb4509
+!green
+*color2:  #94e76b
+*color10: #95e76b
+!yellow
+*color3:  #ffac18
+*color11: #ffac18
+!blue
+*color4:  #46aede
+*color12: #46aede
+!magenta
+*color5:  #e32c57
+*color13: #e32c57
+!cyan
+*color6:  #d6dbac
+*color14: #d6dbac
+!white
+*color7:  #efefef
+*color15: #efefef
+
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.saveLines: 4096
+
+XTerm.vt100.faceName: Gohu GohuFont:size=14
+
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+XTerm.vt100.selectToClipboard: true 
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.autohint:   false
+Xft.lcdfilter:  lcddefault
