@@ -21,8 +21,8 @@ zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=2000
+SAVEHIST=2000
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
 ## Keybindings
@@ -65,25 +65,20 @@ export LESS=-r
 ## history and highlighting
 source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOME/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey '^[[A' history-substring-search-up			
+bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-#source /usr/share/nvm/init-nvm.sh   # nvm
-#source /home/leo/.rvm/scripts/rvm   # rvm
-
-# init zoxide
-#eval "$(zoxide init zsh)"
-
 # aliases
-#alias ls="exa"                          # better ls
-#alias find="fd"                         # better fd
-#alias cat="bat"                         # better cat
-#alias cp="cp -i"                        # Confirm before overwriting something
+alias ls="exa"            # better ls
+alias cat="bat"           # better cat
+alias cp="cp -i"          # confirm before overwriting something
+alias emacs="emacs -nw"   # x is lame
 
 # file associations
 alias -s txt=$EDITOR
