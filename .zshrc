@@ -78,7 +78,6 @@ bindkey '^[[B' history-substring-search-down
 alias ls="exa"            # better ls
 alias cat="bat"           # better cat
 alias cp="cp -i"          # confirm before overwriting something
-alias emacs="emacs -nw"   # x is lame
 
 # file associations
 alias -s txt=$EDITOR
@@ -90,18 +89,23 @@ alias -s mp3=$VLC
 alias -s mp4=$VLC
 alias -s mkv=$VLC
 
+alias firefox=firefox-bin
+
 # pip to path
 export PATH="${PATH}:${HOME}/.local/bin/"
 
 # nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # go
 export PATH="${PATH}:/usr/local/go/bin"
 
 # rust
-export PATH="${PATH}:/home/leo/.cargo/bin"
+export PATH="${PATH}:${HOME}/.cargo/bin"
+
+# z
+eval "$(zoxide init zsh)"
 
 # portage aliases
 alias depclean="emerge --depclean -a"    # clean

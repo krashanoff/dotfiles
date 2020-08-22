@@ -4,7 +4,8 @@ XTerm.termName: xterm-256color
 XTerm.vt100.locale: true
 XTerm.vt100.saveLines: 4096
 
-XTerm.vt100.faceName: Gohu GohuFont:size=14
+XTerm.vt100.faceName: Fira Code Regular:size=10
+XTerm.vt100.internalBorder: 20
 
 XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.backarrowKey: false

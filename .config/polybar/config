@@ -26,7 +26,7 @@ secondary = ${xrdb:color14:#e60053}
 alert = ${xrdb:color2:#bd2c40}
 
 [bar/wm]
-width = 800
+width = 60%
 height = 32
 offset-x = 12
 offset-y = 12
@@ -62,7 +62,7 @@ font-2 = siji:pixelsize=10;1
 
 [bar/bar]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 40%
+width = 52%
 height = 32
 offset-x = 12
 offset-y = 12

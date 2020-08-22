@@ -120,10 +120,7 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-#
-# media keys
-#
-
+# volume
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +2%
 
