@@ -39,7 +39,7 @@ Config files and things I use.
     * [xxh](https://github.com/xxh/xxh)
 * dev
   * text editor: [micro](https://github.com/zyedidia/micro)
-  * code editor: [spacemacs](https://github.com/syl20bnr/spacemacs)
+  * code editor: [neovim](https://github.com/neovim/neovim)
   * node: [nvm](https://github.com/nvm-sh/nvm)
   * ruby: [rvm](http://rvm.io/)
   * go db: [delve](https://github.com/go-delve/delve)

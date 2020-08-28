@@ -83,15 +83,22 @@ alias cp="cp -i"          # confirm before overwriting something
 alias -s txt=$EDITOR
 alias -s md=$EDITOR
 alias -s html=$EDITOR
+alias -s js=$EDITOR
 alias -s c=$EDITOR
+alias -s h=$EDITOR
+alias -s cpp=$EDITOR
+alias -s hpp=$EDITOR
 alias -s go=$EDITOR
-alias -s mp3=$VLC
-alias -s mp4=$VLC
-alias -s mkv=$VLC
+alias -s mp3=$MEDIA
+alias -s mp4=$MEDIA
+alias -s mkv=$MEDIA
+alias -s m4v=$MEDIA
 
+# firefox alias since I refuse to compile a web browser
 alias firefox=firefox-bin
 
 # pip to path
+# unnecessary on most systems
 export PATH="${PATH}:${HOME}/.local/bin/"
 
 # nvm
@@ -99,7 +106,9 @@ export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # go
+export GOPATH="/data/repos/go"
 export PATH="${PATH}:/usr/local/go/bin"
+export PATH="${PATH}:${GOPATH}/bin"
 
 # rust
 export PATH="${PATH}:${HOME}/.cargo/bin"
@@ -108,7 +117,10 @@ export PATH="${PATH}:${HOME}/.cargo/bin"
 eval "$(zoxide init zsh)"
 
 # portage aliases
-alias depclean="emerge --depclean -a"    # clean
+alias depclean="sudo emerge --depclean -a"
+alias ewrs="sudo emerge-webrsync"
+alias eudnw="sudo emerge --update --deep --newuse @world"
+alias eav="sudo emerge -av"
 
 # pure prompt
 fpath+=$HOME/.zsh/pure
