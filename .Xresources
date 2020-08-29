@@ -10,9 +10,12 @@ XTerm.vt100.internalBorder: 20
 XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.backarrowKey: false
 XTerm.ttyModes: erase ^?
-XTerm.vt100.selectToClipboard: true 
-Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
-Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+! keybindings, clipboard
+XTerm.vt100.selectToClipboard: false
+XTerm.vt100.translations: #override \
+	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
 
 Xft.dpi:        96
 Xft.antialias:  true
