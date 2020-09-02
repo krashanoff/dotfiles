@@ -4,4 +4,5 @@ export GTK_THEME="Breeze:dark"
 
 # assoc
 export EDITOR="nvim"
+export PHOTO="feh"
 export BROWSER="firefox"

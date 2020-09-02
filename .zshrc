@@ -78,6 +78,7 @@ bindkey '^[[B' history-substring-search-down
 alias ls="exa"            # better ls
 alias cat="bat"           # better cat
 alias cp="cp -i"          # confirm before overwriting something
+alias vim="nvim"
 
 # file associations
 alias -s txt=$EDITOR
@@ -93,6 +94,7 @@ alias -s mp3=$MEDIA
 alias -s mp4=$MEDIA
 alias -s mkv=$MEDIA
 alias -s m4v=$MEDIA
+alias -s jpg=$PHOTO
 
 # firefox alias since I refuse to compile a web browser
 alias firefox=firefox-bin
