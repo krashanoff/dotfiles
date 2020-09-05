@@ -1,6 +1,5 @@
 app-admin/sudo
 app-admin/sysklogd
-app-editors/emacs
 app-editors/nano
 app-editors/neovim
 app-emulation/docker
@@ -28,11 +27,15 @@ net-firewall/iptables
 net-im/discord-bin
 net-im/zoom
 net-misc/dhcpcd
+net-misc/ntp
 sys-apps/pciutils
+sys-apps/ripgrep
 sys-boot/grub:2
 sys-boot/os-prober
 sys-fs/dosfstools
+sys-fs/ntfs3g
 sys-kernel/gentoo-sources
+sys-kernel/gentoo-sources:5.4.60
 sys-process/cronie
 sys-process/htop
 www-client/firefox-bin
