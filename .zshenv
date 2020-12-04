@@ -1,5 +1,5 @@
 # xdg, gtk, qt
-export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CONFIG_HOME="${HOME}/.config"
 export GTK_THEME="Breeze:dark"
 
 # assoc

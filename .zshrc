@@ -63,9 +63,9 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-r
 
 ## history and highlighting
-source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOME/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-source $HOME/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ${HOME}/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ${HOME}/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
@@ -78,7 +78,7 @@ bindkey '^[[B' history-substring-search-down
 alias ls="exa"            # better ls
 alias cat="bat"           # better cat
 alias cp="cp -i"          # confirm before overwriting something
-alias vim="nvim"
+alias vim="nvim"          # replace vim
 
 # file associations
 alias -s txt=$EDITOR
@@ -105,7 +105,7 @@ export PATH="${PATH}:${HOME}/.local/bin/"
 
 # nvm
 export NVM_DIR="${HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "${NVM_DIR}/nvm.sh" ] && \. "${NVM_DIR}/nvm.sh"
 
 # go
 export GOPATH="/data/repos/go"
@@ -119,12 +119,11 @@ export PATH="${PATH}:${HOME}/.cargo/bin"
 eval "$(zoxide init zsh)"
 
 # portage aliases
-alias depclean="sudo emerge --depclean -a"
 alias ewrs="sudo emerge-webrsync"
 alias eudnw="sudo emerge --update --deep --newuse @world"
-alias eav="sudo emerge -av"
+alias eda="sudo emerge --depclean -a"
 
 # pure prompt
-fpath+=$HOME/.zsh/pure
+fpath+=${HOME}/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
