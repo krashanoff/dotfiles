@@ -1,8 +1,6 @@
-# xdg, gtk, qt
 export XDG_CONFIG_HOME="${HOME}/.config"
-export GTK_THEME="Breeze:dark"
+export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 
-# assoc
 export EDITOR="nvim"
-export PHOTO="feh"
+export PHOTO="shotwell"
 export BROWSER="firefox"

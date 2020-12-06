@@ -96,9 +96,6 @@ alias -s mkv=$MEDIA
 alias -s m4v=$MEDIA
 alias -s jpg=$PHOTO
 
-# firefox alias since I refuse to compile a web browser
-alias firefox=firefox-bin
-
 # pip to path
 # unnecessary on most systems
 export PATH="${PATH}:${HOME}/.local/bin/"
