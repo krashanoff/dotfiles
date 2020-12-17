@@ -3,7 +3,7 @@
 Config files and things I use.
 
 ### Things I use
-* Shell: zsh w/ [Pure Prompt](https://github.com/sindresorhus/pure)
+* Shell: zsh w/ [Starship](https://github.com/starship/starship)
 * Gui
   * Wayland
   * GNOME
