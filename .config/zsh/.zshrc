@@ -63,9 +63,9 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-r
 
 ## history and highlighting
-source ${HOME}/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ${HOME}/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-source ${HOME}/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ${ZDOTDIR}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ${ZDOTDIR}/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ${ZDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
@@ -96,31 +96,8 @@ alias -s mkv=$MEDIA
 alias -s m4v=$MEDIA
 alias -s jpg=$PHOTO
 
-# pip to path
-# unnecessary on most systems
-export PATH="${PATH}:${HOME}/.local/bin/"
-
-# nvm
-export NVM_DIR="${HOME}/.nvm"
-[ -s "${NVM_DIR}/nvm.sh" ] && \. "${NVM_DIR}/nvm.sh"
-
-# go
-export GOPATH="/data/repos/go"
-export PATH="${PATH}:/usr/local/go/bin"
-export PATH="${PATH}:${GOPATH}/bin"
-
-# rust
-export PATH="${PATH}:${HOME}/.cargo/bin"
-
 # z
 eval "$(zoxide init zsh)"
 
-# portage aliases
-alias ewrs="sudo emerge-webrsync"
-alias eudnw="sudo emerge --update --deep --newuse @world"
-alias eda="sudo emerge --depclean -a"
-
-# pure prompt
-fpath+=${HOME}/.zsh/pure
-autoload -U promptinit; promptinit
-prompt pure
+# starship
+eval "$(starship init zsh)"

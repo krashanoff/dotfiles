@@ -11,7 +11,7 @@ Config files and things I use.
     * [Plata Colors](https://www.gnome-look.org/p/1342612/)
     * [Tela Icons](https://github.com/vinceliuice/Tela-icon-theme)
   * Terminal Emulator: [Alacritty](https://github.com/alacritty/alacritty)
-  * Font: [Fira Code](https://github.com/tonsky/FiraCode)
+  * Font: [Fira Mono Nerdfont](https://github.com/ryanoasis/nerd-fonts/releases)
 * Util
   * Rust Coreutils
     * `ls`: [exa](https://github.com/ogham/exa)
@@ -24,5 +24,4 @@ Config files and things I use.
   * Editor: [neovim](https://github.com/neovim/neovim)
   * Node Version Manager: [nvm](https://github.com/nvm-sh/nvm)
   * Ruby Version Manager: [rvm](http://rvm.io/)
-  * Go Debugging: [delve](https://github.com/go-delve/delve)
 * IME: [mozc](https://github.com/google/mozc)
