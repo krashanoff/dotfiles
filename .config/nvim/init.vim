@@ -44,6 +44,15 @@ set nobackup
 set nowritebackup
 set number
 
+" disable info message
+let &shortmess = 'filnxtToOFI'
+" change line break
+let &showbreak = '\'
+let &shortmess = 'filnxtToOFI'
+
+" hot reload
+:nnoremap <leader>src :so $HOME/.config/nvim/init.vim<C-r><RET>
+
 set background=dark
 let g:github_colors_soft = 1
 let g:github_colors_block_diffmark = 0
