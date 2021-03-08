@@ -15,6 +15,5 @@ export NVM_DIR="${HOME}/.nvm"
 # rust
 export PATH="${PATH}:${HOME}/.cargo/bin"
 
-export EDITOR="nvim"
-export PHOTO="shotwell"
+export EDITOR="micro"
 export BROWSER="firefox"
