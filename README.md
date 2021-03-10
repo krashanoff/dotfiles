@@ -12,6 +12,7 @@ Config files and things I use.
     * [Tela Icons](https://github.com/vinceliuice/Tela-icon-theme)
   * Terminal Emulator: [Alacritty](https://github.com/alacritty/alacritty)
   * Font: [Fira Mono Nerdfont](https://github.com/ryanoasis/nerd-fonts/releases)
+  * Tmux
 * Util
   * Rust Coreutils
     * `ls`: [exa](https://github.com/ogham/exa)
